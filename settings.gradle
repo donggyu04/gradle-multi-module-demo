@@ -1,3 +1,8 @@
 rootProject.name = 'gradle-multi-module-demo'
 include 'module-api', 'module-common', 'module-web'
 
+println "settings directory : ${settingsDir}"
+
+// you can modify project dir or build file.
+println project(':module-common').projectDir
+println project(':module-common').buildFileName
